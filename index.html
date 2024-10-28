@@ -1,62 +1,51 @@
-<center>
-    <h1>Tugas Infrastruktur Teknologi Big Data <br> Data Penjualan Mobil di Canada 2019-2021</h1>
-    <h2>Data Set : <a href="penjualanmobildikanada.xlsx">DATA PENJUALAN BAN PT GAJAH TUNGGAL Tbk Tahun 2024</a></h2>
+<!DOCTYPE html>
+<html lang="en">
 
-    <h2>Anggota Kelompok :</h2>
-    <table border="1">
-        <tr>
-            <td>
-                <b>NIM</b>
-            </td>
-            <td>
-                <b>NAMA</b>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                10122051
-            </td>
-            <td>
-                Tonni R. M.
-            </td>
-        </tr>
-        <tr>
-            <td>
-                10122058
-            </td>
-            <td>
-                Defvin
-            </td>
-        </tr>
-        <tr>
-            <td>
-                10122049
-            </td>
-            <td>
-                Fadel Anugerah Gusti
-            </td>
-        </tr>
-        <tr>
-            <td>
-                10122060
-            </td>
-            <td>
-                Adly Fadhil Mahardika
-            </td>
-        </tr>
-        <tr>
-            <td>
-                10122071
-            </td>
-            <td>
-                Afie
-            </td>
-        </tr>
-    </table>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Infrastruktur Teknologi Big Data</title>
+    <!-- Import Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="kelompok.js" defer></script>
+</head>
 
-    <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/20011761">
-        <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
-                src="https://public.flourish.studio/visualisation/20011761/thumbnail" width="100%"
-                alt="bar-chart-race visualization" /></noscript>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container w-full max-w-4xl bg-white p-6 shadow-lg text-center flex flex-col justify-between">
+        <h1 class="text-2xl font-bold text-gray-800">
+            Tugas Infrastruktur Teknologi Big Data <br> DATA PRODUKSI BAN PT
+            GAJAH TUNGGAL Tbk Tahun 2024
+        </h1>
+
+        <h2 class="text-lg font-semibold text-gray-700 my-4">
+            Data Set : <a href="penjualanmobildikanada.xlsx" class="text-blue-600 hover:underline">Klik Untuk Download
+                Dataset</a>
+        </h2>
+
+        <div class="flourish-embed flourish-bar-chart-race w-full mb-4" data-src="visualisation/20011761">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript>
+                <img src="https://public.flourish.studio/visualisation/20011761/thumbnail" width="100%"
+                    alt="bar-chart-race visualization">
+            </noscript>
+        </div>
+
+        <h2 class="text-lg font-semibold text-gray-700 mb-4">Anggota Kelompok :</h2>
+
+        <div>
+            <table class="table-auto w-3/4 mx-auto border border-gray-300 text-gray-700">
+                <thead>
+                    <tr class="bg-gray-800 text-white">
+                        <th class="px-4 py-2 border border-gray-300">NIM</th>
+                        <th class="px-4 py-2 border border-gray-300">NAMA</th>
+                    </tr>
+                </thead>
+                <tbody id="kelompok-table">
+                    <!-- Data anggota kelompok akan diisi oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
     </div>
-</center>
+</body>
+
+</html>
