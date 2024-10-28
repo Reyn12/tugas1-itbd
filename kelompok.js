@@ -1,11 +1,15 @@
 // Array of group members
 const kelompok = [
-  { nim: "10122051", nama: "Tonni R. M." },
-  { nim: "10122058", nama: "Defvin" },
-  { nim: "10122049", nama: "Fadel Anugerah Gusti" },
-  { nim: "10122060", nama: "Adly Fadhil Mahardika" },
-  { nim: "10122071", nama: "Afie" },
+  { nim: "10122002", nama: "Muhammad Renaldi M" },
+  { nim: "10122007", nama: "Mochammad Rizky F" },
+  { nim: "10122028", nama: "Muhammad Hilmi F" },
+  { nim: "10122020", nama: "Krisna A" },
+  { nim: "10122038", nama: "Hamid Abdul Aziz" },
 ];
+
+// Title for the page
+const title =
+  "Tugas Infrastruktur Teknologi Big Data <br> DATA PRODUKSI BAN PT GAJAH TUNGGAL Tbk Tahun 2024";
 
 // Function to display group members in the table
 function displayKelompok() {
@@ -17,5 +21,14 @@ function displayKelompok() {
   });
 }
 
-// Call the function to display members when page loads
-document.addEventListener("DOMContentLoaded", displayKelompok);
+// Function to display title
+function displayTitle() {
+  const titleElement = document.getElementById("title");
+  titleElement.innerHTML = title;
+}
+
+// Call the functions to display title and members when page loads
+document.addEventListener("DOMContentLoaded", () => {
+  displayTitle();
+  displayKelompok();
+});
